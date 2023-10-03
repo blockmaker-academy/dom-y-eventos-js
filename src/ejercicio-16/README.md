@@ -1,0 +1,36 @@
+## Ejercicio 16: Temporizador de Evento Personalizado
+
+Crea un temporizador que dispare un evento personalizado después de cierto tiempo.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 16: Temporizador de Evento Personalizado</title>
+  </head>
+  <body>
+    <button id="miBoton">Iniciar Temporizador</button>
+
+    <script>
+      const boton = document.getElementById('miBoton')
+
+      function iniciarTemporizador() {
+        setTimeout(() => {
+          const eventoPersonalizado = new Event('eventoPersonalizado')
+          boton.dispatchEvent(eventoPersonalizado)
+        }, 3000) // 3 segundos
+      }
+
+      boton.addEventListener('eventoPersonalizado', () => {
+        alert('¡Evento personalizado disparado!')
+      })
+
+      boton.addEventListener('click', () => {
+        iniciarTemporizador()
+      })
+    </script>
+  </body>
+</html>
+```

@@ -1,0 +1,22 @@
+## Ejercicio 8: Cambio de Estilos con `style`
+
+Cambia los estilos de un elemento utilizando la propiedad `style` en JavaScript. Aprenderás a aplicar estilos dinámicamente a un elemento.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8: Cambio de Estilos con `style`</title>
+  </head>
+  <body>
+    <div id="miElemento">Elemento con estilo</div>
+
+    <script>
+      const elemento = document.getElementById('miElemento')
+      elemento.style.backgroundColor = 'red'
+    </script>
+  </body>
+</html>
+```

@@ -1,0 +1,11 @@
+{
+  "name": "dom-y-eventos-js",
+  "version": "1.0.0",
+  "description": "Ejercicios de Fundamentos de JavaScript - Manipulación del DOM y eventos en JavaScript",
+  "keywords": [
+    "javascript",
+    "web development"
+  ],
+  "author": "Alex Muñoz <https://github.com/alexmf91>",
+  "license": "MIT"
+}
