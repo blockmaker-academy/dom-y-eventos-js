@@ -1,3 +1,8 @@
+<!-- Selección de Elementos por ID
+Selecciona un elemento por su ID único y cambia su contenido utilizando
+JavaScript. En este ejercicio, aprenderás a utilizar `getElementById` para
+acceder a un elemento específico en el DOM y modificar su contenido.  -->
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -6,10 +11,14 @@
     <title>Ejercicio 1: Selección de Elementos por ID</title>
   </head>
   <body>
-    <!-- Escribe tu codigo html aqui -->
+    <div id="miElemento">Texto inicial</div><!-- Escribe tu codigo html -->
 
     <script>
-      // Escribe tu codigo javascript aqui
+      const elemento = document.getElementById('miElemento')// Escribe tu codigo javascript // 
+      console.log('Elemento: ', elemento)
+      elemento.innerHTML = 'Texto Modificado y texto en negrita <strong>negrita</strong>'
+      console.log('Elemento 2: ' , elemento)
+
     </script>
   </body>
 </html>
