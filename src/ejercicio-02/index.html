@@ -1,3 +1,10 @@
+<!--Selección de Elementos por Clase!-->
+<!--Selecciona todos los elementos con una clase específica y cambia sus--!>
+<!--estilos usando JavaScript. Este ejercicio te muestra cómo utilizar --!>
+<!--`getElementsByClassName` para seleccionar varios elementos y aplicarles--!>
+<!--cambios en el estilo.--!>
+
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -7,9 +14,16 @@
   </head>
   <body>
     <!-- Escribe tu codigo html aqui -->
+    <div class="claseEspecifica">Elemento 1</div>
+    <div class="claseEspecifica">Elemento 2</div>
+    <div class="claseEspecifica">Elemento 3</div>
 
     <script>
-      // Escribe tu codigo javascript aqui
+      // Escribe tu codigo javascript aqui //
+      const elementos = document.getElementsByClassName('claseEspecifica')
+      for (const elemento of elementos) {
+        elemento.style.backgroundColor = 'blue'
+      }
     </script>
   </body>
 </html>
