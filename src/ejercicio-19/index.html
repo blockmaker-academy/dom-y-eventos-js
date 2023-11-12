@@ -7,9 +7,15 @@
   </head>
   <body>
     <!-- Escribe tu codigo html aqui -->
+    <div id="miDiv">Tamaño de ventana: Desconocido</div>
 
     <script>
       // Escribe tu codigo javascript aqui
+      const div = document.getElementById('miDiv')
+      function actualizarTamañoVentana() {
+        div.textContent = 'Tamaño de ventana: ${window.innerWidth} x ${window.innerHeight}'
+      }
+      window.addEventListener('resize', actualizarTamañoVentana)
     </script>
   </body>
 </html>

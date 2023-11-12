@@ -7,9 +7,22 @@
   </head>
   <body>
     <!-- Escribe tu codigo html aqui -->
+    <button id="miBoton">Disparar Evento Personalizado</button>
 
     <script>
       // Escribe tu codigo javascript aqui
+      const boton = document.getElementById('miBoton')
+      function crearEventoPersonalizado () {
+        const eventoPersonalizado = new Event('eventoPersonalizado')
+        boton.dispatchEvent(eventoPersonalizado)
+      }
+      boton.addEventListener('eventoPersonalizado', () => {
+        alert('¡Evento personalizado disparado!')
+      })
+      boton.addEventListener('click', () => {
+        crearEventoPersonalizado()
+      })
     </script>
   </body>
 </html>
+

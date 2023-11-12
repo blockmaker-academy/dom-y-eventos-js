@@ -7,9 +7,15 @@
   </head>
   <body>
     <!-- Escribe tu codigo html aqui -->
+    <a id="miEnlace" href="https://www.ejemplo.com">Enlace</a>
 
     <script>
       // Escribe tu codigo javascript aqui
+      const enlace = document.getElementById('miEnlace')
+      enlace.addEventListener('click', (evento) => {
+        evento.preventDefault()
+        alert('Enlace bloqueado')
+      })
     </script>
   </body>
 </html>

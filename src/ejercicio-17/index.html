@@ -7,9 +7,15 @@
   </head>
   <body>
     <!-- Escribe tu codigo html aqui -->
+    <img id="miImagen" src="imagen.jpg" alt="Imagen" />
 
     <script>
       // Escribe tu codigo javascript aqui
+      const imagen = document.getElementById('miImagen')
+
+      imagen.addEventListener('load', () => {
+        alert('La imagen se ha cargado correctamente')
+      })
     </script>
   </body>
 </html>

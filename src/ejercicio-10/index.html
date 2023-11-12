@@ -7,9 +7,15 @@
   </head>
   <body>
     <!-- Escribe tu codigo html aqui -->
+    <div id="contenedor">Contenido existente</div>
+    <button id=""miBoton">Agregar Elemento</button>
 
     <script>
       // Escribe tu codigo javascript aqui
+      const nuevoElemento = document.createElement('div')
+      nuevoElemento.textContent = 'Nuevo elemento'
+      const contenedor = document.getElementById('contenedor')
+      contenedor.appendChild(nuevoElemento)
     </script>
   </body>
 </html>

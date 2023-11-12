@@ -1,7 +1,6 @@
 ## Ejercicio 12: Asociar Evento de Clic
 
 Asocia un evento de clic a un botón y muestra un mensaje cuando se hace
-
 clic en el botón. Aprenderás cómo responder a eventos de usuario.
 
 ```html
@@ -24,3 +23,5 @@ clic en el botón. Aprenderás cómo responder a eventos de usuario.
   </body>
 </html>
 ```
+
+
