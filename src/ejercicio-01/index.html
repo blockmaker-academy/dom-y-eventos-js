@@ -3,13 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio 1: Selección de Elementos por ID</title>
+    <title>Document</title>
   </head>
   <body>
-    <!-- Escribe tu codigo html aqui -->
+    <main>
+      <h1>Todo List</h1>
+      <ul id="Lista-tareas">    
+        <li>
+          <span>Nombre tarea</span>
+          <button>eliminar</button>
+        </li>            
+      </ul>
 
+      <div>
+        <input type="text" placeholder="Añade una tarea" id="input-tarea"/>
+        <button id="boton-añadir-tarea">Añadir Tarea</button>
+      </div>
+    </main>
     <script>
-      // Escribe tu codigo javascript aqui
+      function añadirTarea() {
+        const inputTarea = document.getElementById('input-tarea')
+        const textoTarea = inputTarea.value
+        const listaTareas = document.getElementById('lista-tareas')
+
+        const nuevoElementoLista = document.createElement('li')
+        nuevoElementoLista.innerHTML = `
+        <span>${textoTarea}</span>
+        <button onclick="borrarTarea(this)">Eliminar</button>
+        `
+             
+
+        listaTareas.appendChild(nuevoElementoLista)
+        inputTarea.value = ''      
+      }
+
+      function borrarTarea() {
+        const listaTareas = document.getElementById('lista-tareas')
+        const elementoLista = event.target.parentElement
+        listaTareas.removeChild(elementoLista)
+      }
+
+      document.getElementById('boton-añadir-tarea').addEventListener('click', añadirTarea)
     </script>
   </body>
 </html>
+

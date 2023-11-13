@@ -7,9 +7,16 @@
   </head>
   <body>
     <!-- Escribe tu codigo html aqui -->
+    <p>Primer párrafo</p>
+    <p>Segundo párrafo</p>
+    <p>Tercer párrafo</p>
 
     <script>
       // Escribe tu codigo javascript aqui
+      const elementos = document.querySelectorAll('p')
+      elementos.forEach((elemento) => {
+        elemento.style.display = 'none'
+      })
     </script>
   </body>
 </html>

@@ -7,9 +7,16 @@
   </head>
   <body>
     <!-- Escribe tu codigo html aqui -->
+    <div class="claseEspecifica">Elemento 1</div>
+    <div class="claseEspecifica">Elemento 2</div>
+    <div class="claseEspecifica">Elemento 3</div>
 
     <script>
-      // Escribe tu codigo javascript aqui
+      // Escribe tu codigo javascript aqui //
+      const elementos = document.getElementsByClassName('claseEspecifica')
+      for (const elemento of elementos) {
+        elemento.style.backgroundColor = 'blue'
+      }
     </script>
   </body>
 </html>
