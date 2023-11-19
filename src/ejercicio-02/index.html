@@ -7,9 +7,19 @@
   </head>
   <body>
     <!-- Escribe tu codigo html aqui -->
-
+    <div class="claseEspecifica"> Elemento 1</div>
+    <div class="claseEspecifica"> Elemento 2</div>
+    <div class="claseEspecifica"> Elemento 3</div>
     <script>
-      // Escribe tu codigo javascript aqui
+      // Codigo
+      const elementos = document.getElementsByClassName('claseEspecifica')
+      console.log('Lista de elementos por clase:', elementos)
+
+      for(const elemento of elementos){
+        elemento.style.backgroundColor = 'blue'
+        elemento.style.marginBottom = '10px'
+      }
+
     </script>
   </body>
 </html>
