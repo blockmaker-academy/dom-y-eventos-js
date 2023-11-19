@@ -7,9 +7,14 @@
   </head>
   <body>
     <!-- Escribe tu codigo html aqui -->
+    <div id="miElemento"> Texto Inicial</div>
 
     <script>
       // Escribe tu codigo javascript aqui
+      const elemento = document.getElementById('miElemento')
+      console.log('Mi elemento:',elemento)
+      elemento.textContent = 'Nuevo texto a mostrar'
+
     </script>
   </body>
 </html>
