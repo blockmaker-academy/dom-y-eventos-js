@@ -7,9 +7,15 @@
   </head>
   <body>
     <!-- Escribe tu codigo html aqui -->
-
+    <div id="contenedor">
+      Elemento Padre
+      <div id="elementoHijo">Eliminar el elemento hijo</div>
+    </div>
     <script>
       // Escribe tu codigo javascript aqui
+      const elementoContenedor = document.getElementById('contenedor')
+      const elementoHijo = document.getElementById('elementoHijo')
+      elementoContenedor.removeChild(elementoHijo)
     </script>
   </body>
 </html>
