@@ -7,9 +7,33 @@
   </head>
   <body>
     <!-- Escribe tu codigo html aqui -->
+    <a href="https://www.google.com" id="miEnlace">Enlace</a>
 
     <script>
-      // Escribe tu codigo javascript aqui
+      /*Manipulacion de eventos:
+      1- eventos en linea de elementos html: para asignar un evento a un elemento HTML
+      ej1: <button onclick="displayDate()">Try it</button>
+        displayDate --> funcion que se ejecuta una vez se llama al vento onclick
+      ej2: <h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
+        en este se cambia el contenido de h1 se usa el this para hacer referencia al elemento
+      ej3: <h1 onclick="changeText(this)">Click on this text!</h1>
+        se cambia el contenido haciendo uso de la funcion changeText(this)
+        function changeText(id){id.innerHTML = 'Oopss';}
+      2- Asignacion de eventos usando DOM en javascript:
+      *Uso de atributo detector de evento:
+      document.getElementById("myBtn").onclick = displayDate;
+      En HTML, onclick es el detector de eventos, myFunction es el controlador de eventos:
+      <button onclick="myFunction()">Click me</button>
+      *Uso de escuchador de eventos addEventListener
+      En JavaScript, el clic es el evento, myFunction es el controlador de eventos:
+      button.addEventListener("click", myFunction);
+      */
+
+      const elementoEnlace = document.getElementById('miEnlace')
+      elementoEnlace.addEventListener('click', (evento)=>{
+        evento.preventDefault()
+        alert('Enlace bloqueado')
+      })
     </script>
   </body>
 </html>
